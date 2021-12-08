@@ -1,18 +1,14 @@
 name: first
 
-on:  
+on:
   push:
-    branches: [ master ]
+    branches: [master]
 
-jobs: 
+jobs:
   job1:
     name: First Job
     runs-on: ubuntu-latest
-    steps: 
-    - name: Step One
-      uses: actions/checkout@v2
-    - name: Step Two 
-    - run: echo "Checking ubuntu version"
-      run: lsb_release -d
-
-
+    steps:
+      - name: Step One
+        uses: actions/checkout@v2
+        run: lsb_release -d
