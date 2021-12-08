@@ -1,14 +1,12 @@
-name: first
+name: test-github-workflow
 
 on:
   push:
     branches: [master]
 
 jobs:
-  job1:
-    name: First Job
+  Ubuntu-Version:
     runs-on: ubuntu-latest
     steps:
-      - name: Step One
-        uses: actions/checkout@v2
-        run: lsb_release -d
+      - run: echo "sChecking Ubuntu Version"
+      - run: lsb_release -d
